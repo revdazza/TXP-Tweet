@@ -1168,7 +1168,7 @@ function arc_article_tweet($event,$step)
 
 			$tweet_id = (is_object($result)) ? $result->id_str : 0;
 
-			if ($tweet_id) {
+			if ($result!=false) {
 
 				$tweet = addslashes($tweet);
 
